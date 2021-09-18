@@ -62,12 +62,12 @@ export function TaskList() {
 
   function checkNewIdViability(id: number) {
     let isValid = true
-    tasks.forEach(task => {
-      if (task.id === id) {
+    for (let i = 0; i < tasks.length; i) {
+      if (tasks[i].id === id) {
         isValid = false
+        break
       }
     }
-    )
     return isValid
   }
 
