@@ -62,7 +62,7 @@ export function TaskList() {
 
   function checkNewIdViability(id: number) {
     let isValid = true
-    for (let i = 0; i < tasks.length; i) {
+    for (let i = 0; i < tasks.length; i++) {
       if (tasks[i].id === id) {
         isValid = false
         break
